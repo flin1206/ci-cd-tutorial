@@ -55,18 +55,19 @@ Branch 讓你可以「開一條平行時空」來改程式,而不會影響到原
 ```mermaid
 gitGraph
    commit id: "穩定版本"
-   branch feature-新功能
-   checkout feature-新功能
+   branch feature-newfeature
+   checkout feature-newfeature
    commit id: "開發中1"
    commit id: "開發中2"
    checkout main
    commit id: "修 bug"
-   merge feature-新功能 id: "合併新功能"
+   merge feature-newfeature id: "合併新功能"
 ```
 
 - `main`(有些專案叫 `master`)通常代表「目前最穩定、正式上線的版本」。
-- 當你想開發新功能時,會另外開一條分支(例如 `feature-新功能`),在裡面自由修改,
-  不會弄壞 `main` 分支上穩定的程式碼。
+- 當你想開發新功能時,會另外開一條分支(例如上圖的 `feature-newfeature`),在裡面自由修改,
+  不會弄壞 `main` 分支上穩定的程式碼。分支名稱建議用英文命名(例如 `feature-power`),
+  這是業界的慣例,也能避免部分工具(例如這裡用來畫圖的 Mermaid)對中文字元的支援不完整。
 - 開發完成後,再透過 **Pull Request** 把分支「合併」回 `main`。
 
 ---
@@ -110,7 +111,7 @@ sequenceDiagram
 
 1. 你想幫計算機加上「次方」功能,先建立一個新分支:
    ```bash
-   git checkout -b feature-次方功能
+   git checkout -b feature-power
    ```
 2. 修改程式碼,新增次方函式跟對應的測試。
 3. 存檔並 commit:
@@ -120,7 +121,7 @@ sequenceDiagram
    ```
 4. 推送到 GitHub:
    ```bash
-   git push origin feature-次方功能
+   git push origin feature-power
    ```
 5. 在 GitHub 網頁上開啟 Pull Request。
 6. **GitHub Actions 自動開始跑測試**(這就是 CI 上場的時刻!)。
