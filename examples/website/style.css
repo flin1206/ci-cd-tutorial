@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, "Segoe UI", "Microsoft JhengHei", sans-serif;
+  background-color: #f5f5f0;
+  color: #222;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  max-width: 640px;
+  padding: 48px 24px;
+  line-height: 1.8;
+}
+
+h1 {
+  font-size: 1.8rem;
+  border-bottom: 3px solid #333;
+  padding-bottom: 12px;
+}
+
+code {
+  background-color: #e8e8e0;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+a {
+  color: #1a5276;
+}
+
+.deploy-note {
+  margin-top: 32px;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #ccc;
+  padding-top: 16px;
+}

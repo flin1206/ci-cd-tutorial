@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CI/CD 自動部署範例網站</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>這個網站是自動部署上線的</h1>
+    <p>
+      這個頁面不是有人手動上傳到伺服器的,而是每次程式碼被合併進
+      <code>main</code> 分支後,GitHub Actions 自動幫忙建置並部署到
+      GitHub Pages 上。
+    </p>
+    <p>
+      詳細的運作原理,可以參考教學文件:
+      <a href="https://github.com/flin1206/ci-cd-tutorial/blob/main/docs/08-自動部署到GitHubPages.md">
+        第 8 章:自動部署到 GitHub Pages
+      </a>
+    </p>
+    <p class="deploy-note">目前部署版本說明文字:第一版</p>
+  </main>
+</body>
+</html>
