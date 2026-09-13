@@ -105,21 +105,22 @@ sequenceDiagram
 
 ## 2.4 一個實際的操作流程範例
 
-以本專案的範例程式 [`examples/calculator`](../examples/calculator) 為例,一個典型的開發流程長這樣:
+以本專案的範例程式 [`examples/calculator`](../examples/calculator) 為例,一個典型的開發流程長這樣
+(目前這個範例已經有加、減、乘、除四種功能,這裡假設你想再加上「次方」功能):
 
-1. 你想幫計算機加上「減法」功能,先建立一個新分支:
+1. 你想幫計算機加上「次方」功能,先建立一個新分支:
    ```bash
-   git checkout -b feature-減法功能
+   git checkout -b feature-次方功能
    ```
-2. 修改程式碼,新增減法函式跟對應的測試。
+2. 修改程式碼,新增次方函式跟對應的測試。
 3. 存檔並 commit:
    ```bash
    git add .
-   git commit -m "新增減法功能與測試"
+   git commit -m "新增次方功能與測試"
    ```
 4. 推送到 GitHub:
    ```bash
-   git push origin feature-減法功能
+   git push origin feature-次方功能
    ```
 5. 在 GitHub 網頁上開啟 Pull Request。
 6. **GitHub Actions 自動開始跑測試**(這就是 CI 上場的時刻!)。
