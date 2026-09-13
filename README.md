@@ -1,5 +1,8 @@
 # CI/CD 完全入門教學
 
+[![CI 狀態](https://github.com/flin1206/ci-cd-tutorial/actions/workflows/ci.yml/badge.svg)](https://github.com/flin1206/ci-cd-tutorial/actions/workflows/ci.yml)
+[![CD 狀態](https://github.com/flin1206/ci-cd-tutorial/actions/workflows/deploy.yml/badge.svg)](https://github.com/flin1206/ci-cd-tutorial/actions/workflows/deploy.yml)
+
 > 用「工廠生產線」和「自動販賣機」的比喻,帶你從零開始搞懂 CI/CD。
 > 就算完全沒寫過程式,只要看得懂日常生活中的流程比喻,也能跟著這份教學一步步理解。
 
@@ -14,7 +17,8 @@
 - 每次有人推程式碼上來,GitHub 會**自動幫你跑測試**(對應「持續整合 CI」)
 - 測試通過後,GitHub 會**自動幫你把網站部署上線**(對應「持續交付/部署 CD」)
 
-你可以到本專案的 [Actions 分頁](../../actions) 親眼看到它們運作的過程。
+你可以到本專案的 [Actions 分頁](../../actions) 親眼看到它們運作的過程,
+也可以直接打開自動部署上線的網站:<https://flin1206.github.io/ci-cd-tutorial/>。
 
 ---
 
