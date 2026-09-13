@@ -1,0 +1,37 @@
+name: CI - 自動測試計算機範例
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "examples/calculator/**"
+      - ".github/workflows/ci.yml"
+  pull_request:
+    branches: ["main"]
+    paths:
+      - "examples/calculator/**"
+      - ".github/workflows/ci.yml"
+
+jobs:
+  test:
+    name: 執行單元測試
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: examples/calculator
+
+    steps:
+      - name: 取得程式碼
+        uses: actions/checkout@v4
+
+      - name: 設定 Node.js 環境
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: 安裝套件
+        run: npm install
+
+      - name: 執行測試
+        run: npm test
