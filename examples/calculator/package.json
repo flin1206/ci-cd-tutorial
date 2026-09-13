@@ -1,0 +1,12 @@
+{
+  "name": "cicd-tutorial-calculator",
+  "version": "1.0.0",
+  "description": "CI/CD 教學用的計算機範例,搭配 GitHub Actions 自動執行測試",
+  "main": "src/calculator.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
